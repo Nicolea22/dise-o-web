@@ -117,7 +117,16 @@
 	  	      	  <span class="glyphicon glyphicon-time" aria-hidden="true"></span> Ultimas entradas
 	  	        </div>
 	  	        <div class="panel-body">
+	  	      	  
 	  	      	  <p>Todavia no hay entradas que mostrar</p>
+	  	      	  <?php
+					  	include_once 'app/connection.inc.php';
+
+						Connection::open();
+
+						Connection::close();
+
+				  ?>
 	  	      	</div>
 	  	  	  </div>
 	  	  	  <!--Muestra de entradas fin-->
